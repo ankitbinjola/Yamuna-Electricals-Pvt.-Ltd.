@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<?php require_once('php/contact.php'); ?>
 	</head>
 	<body class="is-preload">
 
@@ -157,8 +158,27 @@
 
 								Products we deal in are Personal protective equipments, hand disinfectant, hand sanitizer gel, gloves and face shields.</p>
 
-							<form method="post" action="#">
+							<form method="post" action="contact.php">
 								<div class="row">
+			<div class="col-6 col-12-mobile">
+								<label>Name:</label>
+								<input name="sender">
+									</div>
+					<div class="col-6 col-12-mobile">
+									<label>Email address:</label>
+								<input name="senderEmail">
+									</div>
+							
+									<label>Message:</label>
+								<textarea rows="5" cols="20" name="message"></textarea>
+						
+								<input type="submit" name="submit">
+
+											
+							</div>
+							</form>			
+									
+									
 									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
 									<div class="col-12">

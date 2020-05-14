@@ -10,7 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<?php require_once('php/contact.php'); ?>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<Script src="assets/js/index.js"></Script>	
 	</head>
 	<body class="is-preload">
 
@@ -172,7 +173,7 @@
 									<label>Message:</label>
 								<textarea rows="5" cols="20" name="message"></textarea>
 						
-								<input type="submit" name="submit">
+								<input type="submit" name="submit" onclick="sendEmail()">
 
 											
 							</div>

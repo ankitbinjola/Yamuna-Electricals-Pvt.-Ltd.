@@ -8,6 +8,6 @@ function sendEmail(){
     Subject : "This is the subject",
     Body : "And this is the body"
 }).then(
-  message => alert(message)
+  message => alert("email send successfully")
 );
 }
